@@ -1,10 +1,17 @@
 @import url(reset.css);
+@import url(fonte.css);
+
+*{
+    font-family: 'Nunito', sans-serif !important;
+    overflow: hidden;
+}
+
 a {
     color: white;
     text-align: center;
 }
 #body{
-    background-image: url(/img/fundo-catalogo1.png);
+    background-image: url(../img/fundo-catalogo1.png);
     background-repeat: no-repeat;
     background-size: 100%;
     position: relative;
