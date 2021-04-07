@@ -1,0 +1,30 @@
+@import url(reset.css);
+#body{
+    background-image: url(/img/fundo-catalogo1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#retangulo {
+    text-align: center;
+    width: 500px;
+    height: 600px;
+    justify-content: center;
+    display: relative;
+    margin: 3% 35%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#imagem {
+    width: 200px;
+}
+
+#login {
+    
+}
