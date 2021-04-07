@@ -1,0 +1,183 @@
+@import url(reset.css);
+@import url(fonte.css);
+
+*{
+    font-family: 'Nunito', sans-serif !important;
+}
+.primary-sec{
+    width: 100%;
+    height: 700px;
+    position: relative;
+    background-image: url(../img/fundo-catalogo.png);
+    background-repeat: no-repeat;
+    background-size: 100 100;
+}
+.overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: none;
+    padding: 50px;
+    height: 600px;
+}
+.left-header, .middle-header, .right-header{
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    line-height: 80px;
+}
+.left-header p{
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+.right-header{
+    text-align: right;
+}
+.right-header button{
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+    border-bottom: 2px transparent solid;
+}
+.right-header button:hover{
+    border-bottom: 2px #ccc solid;
+}
+.middle-header img{
+    height: 100px;
+}
+.clear{
+    clear: both;
+}
+.primary-title-button{
+    margin-top: 6%;
+    text-align: center;
+    font-size: 35px;
+    color: #fff;
+    font-weight: bold;
+}
+.primary-title-button button{
+    margin-top: 5%;
+    width: 300px;
+    height: 40px;
+    background: transparent;
+    border: 1px #fff solid;
+    color: #fff;
+    font-size: 18px;
+    transition: 0.5s;
+    cursor: pointer;
+    outline: none;
+}
+.primary-title-button button:hover{
+    background: rgba(0, 0, 0, 0.5);
+}
+/* SESSÃO 2 e 3*/
+.second-sec, .thirty-sec{
+    height: 130px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 100px 50px;
+}
+.thirty-sec{
+    background-color: #fff;
+}
+
+.container{
+    width: 60%;
+    margin: 0 auto;
+}
+.division-sec{
+    float: left;
+    width: 50%;
+    color: #fff;
+    margin: 0px auto;
+}
+.division-sec h2{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+.division-sec p{
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 28px;
+}
+.thirty-sec .division-sec h2, .thirty-sec .division-sec p{
+    color: #000 !important;
+} 
+.division-sec img{
+    height: 300px;
+    margin-top: -80px;
+}
+.thirty-sec .division-sec img{
+    height: 220px;
+    margin-top: -50px;
+}
+.align-right{
+    text-align: right;
+}
+.align-left{
+    text-align: left;
+}
+/* FOOTER HOME */
+.footer-home{
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2%;
+    text-align: center;
+    height: auto;
+}
+.social-icons img{
+    height: 25px;
+    margin-right: 5px;
+}
+.social-icons img:last-child{
+    margin-right: none;
+    height: 30px;
+}
+.footer-button{
+    margin-top: 2%;
+    text-align: center;
+    font-size: 35px;
+    color: #fff;
+    font-weight: bold;
+}
+.footer-button button{
+    width: 300px;
+    height: 40px;
+    background: transparent;
+    border: 1px #fff solid;
+    color: #fff;
+    font-size: 18px;
+    transition: 0.5s;
+    cursor: pointer;
+    outline: none;
+}
+.footer-button button:hover{
+    background: rgba(0, 0, 0, 0.5);
+}
+.footer-button p{
+    font-size: 20px;
+    margin-top: 20px;
+}
+.footer-button a{
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+    border-bottom: 2px transparent solid;
+}
+.footer-button a:hover{
+    border-bottom: 2px #ccc solid;
+}
+.footer-logo{
+    margin-top: 5%;
+}
+.footer-logo img{
+    height: 120px;
+}
+.footer-logo p{
+    color: #ccc;;
+}
