@@ -1,4 +1,8 @@
 @import url(reset.css);
+a {
+    color: white;
+    text-align: center;
+}
 #body{
     background-image: url(/img/fundo-catalogo1.png);
     background-repeat: no-repeat;
@@ -13,7 +17,7 @@
 #retangulo {
     text-align: center;
     width: 500px;
-    height: 600px;
+    height: 570px;
     justify-content: center;
     display: relative;
     margin: 3% 35%;
@@ -25,6 +29,112 @@
     width: 200px;
 }
 
-#login {
-    
+/***************************FORMULARIO********************************/
+#fname, #lname{
+    margin-right: 85%;
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    top: 25%,
 }
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 15px 0;
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+input[type=submit] {
+    width: 25%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 14px 20px;
+    margin: 60px 0;
+    margin-left: 2%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+div {
+    border-radius: 5px;
+    padding: 20px;
+}
+
+#cad {
+  font-size: 17px;
+  padding: 8px 15px;
+  text-Align: center;
+  text-Decoration: none;
+  cursor: pointer;
+  float: center;
+  margin-top: -45px;
+}
+
+/************************CHECKBOX***********************************/
+.container {
+    font-size: 12px;
+    color: white;
+    display: block;
+    position: relative;
+    padding-right: 70%;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .container:hover input ~ .checkmark {
+     background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .container input:checked ~ .checkmark {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .container .checkmark:after {
+    left: 5px;
+    top: 2px;
+    width: 2px;
+    height: 5px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
