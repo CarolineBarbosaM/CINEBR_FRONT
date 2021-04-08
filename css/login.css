@@ -27,7 +27,7 @@ a {
     height: 570px;
     justify-content: center;
     display: relative;
-    margin: 3% 35%;
+    margin: 2% 32%;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -46,7 +46,7 @@ a {
     top: 25%,
 }
 
-input[type=text], select {
+input[type=email], select {
     width: 100%;
     padding: 12px 20px;
     margin: 15px 0;
@@ -55,6 +55,21 @@ input[type=text], select {
     border-radius: 4px;
     box-sizing: border-box;
     background-color: rgba(0, 0, 0, 0.8);
+    outline: none;
+    color: white;
+}
+
+input[type=password], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 15px 0;
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.8);
+  outline: none;
+  color: white;
 }
 
 input[type=submit] {
@@ -70,8 +85,8 @@ input[type=submit] {
 }
 
 div {
-    border-radius: 5px;
-    padding: 20px;
+  border-radius: 5px;
+  padding: 20px;
 }
 
 #cad {
@@ -86,11 +101,11 @@ div {
 
 /************************CHECKBOX***********************************/
 .container {
-    font-size: 12px;
+    font-size: 13px;
     color: white;
     display: block;
     position: relative;
-    padding-right: 70%;
+    padding-right: 65%;
     margin-bottom: 12px;
     cursor: pointer;
     -webkit-user-select: none;
@@ -111,17 +126,18 @@ div {
     position: absolute;
     top: 0;
     left: 0;
-    height: 15px;
+    height: 25px;
     width: 15px;
-    background-color: rgba(0, 0, 0, 0.8);
+    border: 3px solid white;
+    background-color: #11ffee00;
   }
   
   .container:hover input ~ .checkmark {
-     background-color: rgba(0, 0, 0, 0.8);
+    background-color: #11ffee00;
   }
   
   .container input:checked ~ .checkmark {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #11ffee00;
   }
   
   .checkmark:after {
