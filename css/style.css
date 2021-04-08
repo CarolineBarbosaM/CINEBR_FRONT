@@ -179,5 +179,59 @@
     height: 120px;
 }
 .footer-logo p{
-    color: #ccc;;
+    color: #ccc;
+}
+/* Home Screen */
+.barra-sup{
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 130px;
+    color: #fff;
+}
+.menu-sup ul li{
+    line-height: 130px;
+    display: inline;
+    border-bottom: 2px transparent solid;
+    transition: 0.5s;
+    margin-right: 5%;
+    font-size: 18px;
+}
+.menu-sup ul li:last-child{
+    margin-right: none;
+}
+.menu-sup ul li:hover{
+    border-bottom: 2px #fff solid;
+}
+.menu-sup ul li a, .menu-sup ul li small{
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+}
+.middle-barra img{
+    margin-top: 15px;
+    height: 100px;
+}
+.options{
+    background-color: #fff;
+    width: 30%;
+    border: 1px #ccc solid;
+    border-radius: 5px;
+    margin-top: -5%;
+    margin-right: 4%;
+    float: right;
+}
+.options ul li{
+    display: block;
+    line-height: 50px;
+}
+.options a{
+    color: #000 !important;
+    border-bottom: 2px transparent solid;
+    transition: 0.5s;
+}
+.options ul li a:hover{
+    border-bottom: 2px #000 solid;
+}
+.logoff a{
+    color: #ff3232 !important;
 }
