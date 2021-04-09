@@ -6,7 +6,6 @@
 }
 .primary-sec{
     width: 100%;
-    height: 700px;
     position: relative;
     background-image: url(../img/fundo-catalogo.png);
     background-repeat: no-repeat;
@@ -16,12 +15,13 @@
     background-color: rgba(0, 0, 0, 0.5);
     background-image: none;
     padding: 50px;
-    height: 600px;
+    padding-bottom: 10%;
 }
 .left-header, .middle-header, .right-header{
     float: left;
-    width: 33.33%;
+    width: 33%;
     text-align: center;
+    height: 80px;
     line-height: 80px;
 }
 .left-header p{
@@ -47,7 +47,7 @@
     border-bottom: 2px #ccc solid;
 }
 .middle-header img{
-    height: 100px;
+    height: 80px;
 }
 .clear{
     clear: both;
@@ -85,7 +85,7 @@
 }
 
 .container{
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
 }
 .division-sec{
@@ -185,16 +185,16 @@
 .barra-sup{
     background-color: rgba(0, 0, 0, 0.8);
     width: 100%;
-    height: 130px;
+    height: 110px;
     color: #fff;
 }
 .menu-sup ul li{
-    line-height: 130px;
     display: inline;
     border-bottom: 2px transparent solid;
     transition: 0.5s;
     margin-right: 5%;
-    font-size: 18px;
+    font-size: 16px;
+    line-height: 110px;
 }
 .menu-sup ul li:last-child{
     margin-right: none;
@@ -208,13 +208,11 @@
     color: #fff;
 }
 .middle-barra img{
-    margin-top: 15px;
     height: 100px;
 }
 .options{
-    background-color: #fff;
-    width: 10%;
-    border: 1px #ccc solid;
+    background-color: rgba(0,0,0,0.5);
+    width: 150px;
     border-radius: 5px;
     margin-top: 0%;
     right: 1.5%;
@@ -226,14 +224,10 @@
 .options li{
     display: block !important;
     line-height: 50px !important;
+    border-bottom: none !important;
 }
 .options li a{
-    color: #000 !important;
-    border-bottom: 2px transparent solid;
-    transition: 0.5s;
-}
-.options li a:hover{
-    border-bottom: 2px #000 solid;
+    color: #fff !important;
 }
 .options .logoff a{
     color: #ff3232 !important;
@@ -243,23 +237,23 @@
     margin-top: -2%;
 }
 .video-preview{
-    margin-top: -20px;
+	position: relative;
+    float: both;
     width: 100%;
-    height: 612px;
+    height: 5%;
     border-bottom: 2px #FFDF00 solid;
+    background: rgba(0,0,0,0.8);
 }
 video {
-    height: 612px;
+    height: 100% !important;
     position: absolute;
-    top: 130px;
     right: 0;
 }
 .titulo-destaque{
     background-size: 100%;
-    float: left;
+    position: relative;
     color: #fff;
     padding: 8% 10%;
-    position: absolute;
     background-image: linear-gradient(to right, #272727,#383838,transparent);
 }
 .info-titulo h1{
@@ -308,27 +302,50 @@ video {
 }
 .catalogo{
     background-color: rgba(0, 0, 0, 0.8);
-    width: 80%;
+    width: 90%;
     min-height: 100px;
     height: auto;
-    padding: 5% 10%;
+    padding: 5% 0% 5% 10%;
 }
 .catalogo h3{
     font-weight: bold;
     font-size: 18px;
     color: #fff;
 }
+.sec-title:first-child{
+    margin-top: 0%;
+}
+.sec-title{
+    margin-top: 5%;
+}
+.container-titulos{
+    overflow-y: hidden;
+    overflow-x: scroll;
+    width: 100%;
+    height: 350px;
+}
+.container-titulos::-webkit-scrollbar{
+    background: rgba(0,0,0,0.5);
+    height: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-left: 3px #FFDF00 solid;
+    border-right: 3px #FFDF00 solid;
+}
+.container-titulos::-webkit-scrollbar-thumb{
+    background: rgba(0,0,0,0.5);
+    border-radius: 5px;
+}
 .titulos-catalogo{
-    margin-top: 2%;
-    width: auto;
-    height: 300px;
+    width: 100%;
+    height: auto;
 }
 .titulo{
     width: 200px;
     height: 300px;
     background-color: #ccc;
     margin-right: 10px;
-    display: inline-block;
+    float: left;
     cursor: pointer;
     transition: 0.5s;
 }
@@ -340,6 +357,7 @@ video {
 }
 .row{
     margin-top: 2%;
+    width: 150%;
 }
 .main-footer{
     background-color: rgba(0, 0, 0, 0.9);
