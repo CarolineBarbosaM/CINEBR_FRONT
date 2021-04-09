@@ -213,25 +213,150 @@
 }
 .options{
     background-color: #fff;
-    width: 30%;
+    width: 10%;
     border: 1px #ccc solid;
     border-radius: 5px;
-    margin-top: -5%;
-    margin-right: 4%;
-    float: right;
+    margin-top: 0%;
+    right: 1.5%;
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
 }
-.options ul li{
-    display: block;
-    line-height: 50px;
+.options li{
+    display: block !important;
+    line-height: 50px !important;
 }
-.options a{
+.options li a{
     color: #000 !important;
     border-bottom: 2px transparent solid;
     transition: 0.5s;
 }
-.options ul li a:hover{
+.options li a:hover{
     border-bottom: 2px #000 solid;
 }
-.logoff a{
+.options .logoff a{
     color: #ff3232 !important;
+}
+.dropdown:hover > .options{
+    opacity: 1;
+    margin-top: -2%;
+}
+.titulo-destaque{
+    background: url(../img/banners/como-se-o-ceu-fosse-oceano.png);
+    background-size: 100%;
+    background-color: rgba(0, 0, 0, 1);
+    width: 80%;
+    height: 300px;
+    color: #fff;
+    float: left;
+    margin-top: -20px;
+    padding: 8% 10%;
+}
+.info-titulo h1{
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 45px;
+    text-transform: capitalize;
+}
+.info-titulo p{
+    font-size: 20px;
+    line-height: 25px;
+    width: 50%;
+}
+.tags{
+    margin-top: 2%;
+}
+.tags ul li{
+    display: inline;
+    font-size: 14px;
+    border: 1px #ccc solid;
+    padding: 3px 5px;
+    border-radius: 3px;
+    margin-right: 0.5%;
+}
+.tags ul li:last-child{
+    margin-right: 0%;
+}
+.actions{
+    margin-top: 3%;
+}
+.play-button, .add-to-list{
+    margin-top: 2%;
+    width: auto;
+    padding: 0px 20px;
+    height: 40px;
+    background: #fafafa;
+    border: none;
+    color: #000;
+    font-size: 18px;
+    transition: 0.5s;
+    cursor: pointer;
+    outline: none;
+}
+.play-button:hover, .add-to-list:hover{
+    background: #ccc;
+}
+.catalogo{
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 80%;
+    min-height: 100px;
+    height: auto;
+    padding: 5% 10%;
+}
+.catalogo h3{
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+}
+.titulos-catalogo{
+    margin-top: 2%;
+    width: auto;
+    height: 300px;
+}
+.titulo{
+    width: 200px;
+    height: 300px;
+    background-color: #ccc;
+    margin-right: 10px;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.titulo:hover{
+    opacity: 0.8;
+}
+.titulo:last-child{
+    margin-right: 0px;
+}
+.row{
+    margin-top: 2%;
+}
+.main-footer{
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 80%;
+    height: auto;
+    padding: 5% 10%;
+}
+.left-footer, .middle-footer, .right-footer{
+    float: left;
+    width: 33.33%;
+}
+.left-footer a, .middle-footer a, .right-footer a{
+    color: #ccc;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 25px;
+}
+.middle-footer{
+    text-align: center;
+}
+.right-footer{
+    text-align: right;
+}
+/* CLASSIFICAÇÕES */
+.classificacao18{
+    background-color: #000;
+    border: 0px !important;
+    font-weight: bold;
 }
