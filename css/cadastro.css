@@ -37,12 +37,9 @@
 }
 
 input[type=email], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 15px 0;
+    width: 50%;
     display: inline-block;
     border: none;
-    border-radius: 4px;
     box-sizing: border-box;
     background-color: rgba(0, 0, 0, 0.8);
     outline: none;
@@ -50,12 +47,9 @@ input[type=email], select {
 }
 
 input[type=text], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 15px 0;
+    width: 50%;
     display: inline-block;
     border: none;
-    border-radius: 4px;
     box-sizing: border-box;
     background-color: rgba(0, 0, 0, 0.8);
     outline: none;
@@ -63,12 +57,9 @@ input[type=text], select {
 }
 
 input[type=date], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 15px 0;
+    width: 50%;
     display: inline-block;
     border: none;
-    border-radius: 4px;
     box-sizing: border-box;
     background-color: rgba(0, 0, 0, 0.8);
     outline: none;
@@ -76,12 +67,9 @@ input[type=date], select {
 }
 
 input[type=password], select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 15px 0;
+  width: 50%;
   display: inline-block;
   border: none;
-  border-radius: 4px;
   box-sizing: border-box;
   background-color: rgba(0, 0, 0, 0.8);
   outline: none;
@@ -92,13 +80,10 @@ input[type=submit] {
     width: 25%;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    padding: 14px 20px;
-    margin: 60px 0;
-    margin-left: 2%;
     border: none;
-    border-radius: 4px;
     cursor: pointer;
     float: right;
+    text-align: center;
 }
 
 div {
@@ -111,7 +96,7 @@ div {
     flex-wrap: wrap;
     color: white;
 }
-.box {
+.box, input {
     box-sizing: border-box;
     padding: 1rem;
     margin: 1rem;
