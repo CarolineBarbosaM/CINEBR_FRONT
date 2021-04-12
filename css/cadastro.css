@@ -5,162 +5,91 @@
     font-family: 'Nunito', sans-serif !important;
     overflow: hidden;
 }
-
-#cadastro {
-    color: white;
-    float: left;
-}
-#body{
+.fundo{
     background-image: url(../img/fundo-catalogo1.png);
     background-repeat: no-repeat;
-    background-size: 100%;
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    margin: 0 auto;
-    overflow: hidden;
+    background-size: 100 100;
+    position: absolute;
+    height: 100%;
+    width: 100%;
 }
-
-#retangulo {
+.retangulo {
     text-align: center;
-    width: 1000px;
-    height: 950px;
-    justify-content: center;
-    display: relative;
-    margin: 2% 32%;
+    width: 70%;
+    height: 70%;
+    margin: 2% auto;
+    padding: 5%;
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: 0.5s;
 }
-
-#imagem {
-    width: 200px;
+.retangulo img{
+  height: 100px;
 }
-
-input[type=email], select {
-    width: 50%;
-    display: inline-block;
-    border: none;
-    box-sizing: border-box;
-    background-color: rgba(0, 0, 0, 0.8);
-    outline: none;
-    color: white;
+.retangulo h1{
+  color: #fff;
+  text-align: left;
+  font-size: 30px;
+  font-weight: bold;
 }
-
-input[type=text], select {
-    width: 50%;
-    display: inline-block;
-    border: none;
-    box-sizing: border-box;
-    background-color: rgba(0, 0, 0, 0.8);
-    outline: none;
-    color: white;
-}
-
-input[type=date], select {
-    width: 50%;
-    display: inline-block;
-    border: none;
-    box-sizing: border-box;
-    background-color: rgba(0, 0, 0, 0.8);
-    outline: none;
-    color: white;
-}
-
-input[type=password], select {
+.left-box, .right-box{
+  margin-top: 20px;
   width: 50%;
-  display: inline-block;
-  border: none;
-  box-sizing: border-box;
-  background-color: rgba(0, 0, 0, 0.8);
+  float: left;
+  color: #fff;
+  text-align: left;
+}
+.left-box label, .right-box label{
+  font-size: 14px;
+  font-weight: bold;
+}
+.left-box input, .right-box input, select{
+  width: 95%;
+  height: 30px;
   outline: none;
-  color: white;
+  border: none;
+  border-bottom: 2px transparent solid;
+  transition: 0.5s;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2px 5px;
+  color: #fff;
 }
-
-input[type=submit] {
-    width: 25%;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    cursor: pointer;
-    float: right;
-    text-align: center;
+.left-box input:focus, .right-box input:focus, select:focus{
+  border-bottom: 2px #fff solid;
 }
-
-div {
+.terms{
+  float: left;
+  color: #fff;
+  text-align: left;
+}
+.submit{
+  float: right;
+}
+input[type='submit']{
+  background: rgba(0, 0, 0, 0.5);
+  outline: none;
+  border: none;
+  height: 35px;
+  padding: 2px 30px;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 50%;
   border-radius: 5px;
-  padding: 20px;
+  border-bottom: 2px transparent solid;
+  transition: 0.5s;
 }
-
-.wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    color: white;
+input[type='submit']:hover{
+  border-bottom: 2px #fff solid;
+  cursor: pointer;
 }
-.box, input {
-    box-sizing: border-box;
-    padding: 1rem;
-    margin: 1rem;
-    width: calc((100% / 2) - 2rem);
+.clear{
+  float: both;
 }
-/************************CHECKBOX***********************************/
-.container {
-    font-size: 13px;
-    color: white;
-    display: block;
-    position: relative;
-    padding-right: 50%;
-    margin-bottom: 25px;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+@media screen and (max-width: 900px) {
+  .retangulo{
+    width: 85%;
+    height: 80%;
   }
-  
-  .container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-  }
-  
-  .checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 15px;
-    border: 3px solid white;
-    background-color: #11ffee00;
-  }
-  
-  .container:hover input ~ .checkmark {
-    background-color: #11ffee00;
-  }
-  
-  .container input:checked ~ .checkmark {
-    background-color: #11ffee00;
-  }
-  
-  .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-  }
-  
-  .container input:checked ~ .checkmark:after {
-    display: block;
-  }
-  
-  .container .checkmark:after {
-    left: 5px;
-    top: 2px;
-    width: 2px;
-    height: 5px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
+}
