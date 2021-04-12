@@ -445,3 +445,53 @@ video {
 .modal-info p, .modal-info .tags{
     color: #fff;
 }
+
+@media screen and (max-width: 1366px){
+    .menu-sup ul li{
+        font-size: 14px;
+    }
+    .middle-barra img{
+        height: 80px;
+        margin-top: 15px;
+    }
+    .info-titulo h1{
+        font-size: 32px;
+    }
+    .info-titulo p{
+        font-size: 16px;
+    }
+    .tags ul li{
+        font-size: 12px;
+    }
+    .play-button, .add-to-list{
+        font-size: 16px;
+    }
+    .container-titulos{
+        height: 300px;
+    }
+    .titulo{
+        width: 180px;
+        height: 260px;
+    }
+    .modal{
+        width: 50%;
+    }
+    .closeButton p{
+        font-size: 16px;
+    }
+    .closeButton img{
+        height: 14px;
+    }
+    .modal-info p{
+        font-size: 16px;
+    }
+    .modal-info .tags{
+        font: 14px;
+    }
+    .modal-info h1{
+        font-size: 26px;
+    }
+    .left-footer a, .middle-footer a, .middle-footer p, .right-footer a{
+        font-size: 14px;
+    }
+}
