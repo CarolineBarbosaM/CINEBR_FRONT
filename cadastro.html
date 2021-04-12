@@ -7,47 +7,38 @@
     <title>Cadastro - CineBr</title>
 </head>
 <body>
-    <div id="body">
-       <div id="retangulo">
-        <img src="img/logobranca.png" alt="logo" id="imagem">
-        
-        <div class="">
-            <div class="cadastro">
-                Cadastro
-            </div>
-            <div class="wrapper">
-                <div class="box">Nome Completo:
-                    <input type="text">
+    <section class="fundo">
+        <div class="retangulo">
+            <img src="img/logobranca.png" alt="CineBr Logo">
+            <h1>Cadastro</h1>
+            <form action="">
+                <div class="left-box">
+                    <label for="nome">Nome: <input type="text" name="nome" placeholder="Nome Completo" required></label>
+                    <label for="dt_nasc">Data de Nascimento: <input type="date" name="dt_nasc" required></label>
+                    <label for="genero">Gênero: <select name="genero" required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="F">Feminino</option>
+                        <option value="M">Masculino</option>
+                        <option value="P">Prefiro não informar</option>
+                    </select></label>
                 </div>
-                <div class="box">E-mail:
-                    <input type="email">
+                <div class="right-box">
+                    <label for="email">E-mail: <input type="email" name="email" placeholder="nome@dominio.com" required></label>
+                    <label for="password">Senha: <input type="password" name="password" placeholder="senha aqui" required></label>
+                    <label for="password1">Repeta a Senha: <input type="password1" name="password1" placeholder="senha aqui denovo" required></label>
+                    
                 </div>
-                <div class="box">Data de Nascimento:
-                    <input type="date">
+                <div class="clear"></div>
+                <div class="terms">
+                    <label for="term"><input type="checkbox" name="term" checked="checked">Aceito os termos de uso</label><br>
+                    <label for="rec"><input type="checkbox" name="rec" checked="checked">Receber recomendações por e-mail</label>
                 </div>
-                <div class="box">Senha:
-                    <input type="password">
+                <div class="clear"></div>
+                <div class="submit">
+                    <input type="submit" name="cadastrar" value="Cadastrar-se">
                 </div>
-                <div class="box">Gênero:
-                    <input type="text">
-                </div>
-                <div class="box">Confirme sua senha:
-                    <input type="password">
-                </div>
-            </div>
-            <label class="container">Aceito os termos de uso
-                <input type="checkbox" checked="checked">
-                <span class="checkmark"></span>
-            </label>
-            <label class="container">Receber recomendações por e-mail
-                <input type="checkbox" checked="checked">
-                <span class="checkmark"></span>
-            </label>
-            <div>
-                <input type="submit" value="Cadastre-se">
-            </div>
+            </form>
         </div>
-       </div>
-    </div>
+    </section>
 </body>
 </html>
