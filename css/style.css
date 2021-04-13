@@ -198,6 +198,10 @@
 }
 .menu-sup ul li:hover{
     border-bottom: 2px #fff solid;
+    cursor: pointer;
+}
+.menu-sup .active{
+    border-bottom: 2px #fff solid;
 }
 .menu-sup ul li a, .menu-sup ul li small{
     text-decoration: none;
@@ -298,7 +302,7 @@ video {
     background: #ccc;
 }
 .catalogo{
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.75);
     width: 90%;
     min-height: 100px;
     height: auto;
