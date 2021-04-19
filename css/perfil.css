@@ -398,13 +398,13 @@ video {
 }
 
 #linha-horizontal {
-    width: 1000px;
+    width: 1100px;
     border: 1px solid #c4bebe;
     margin-top: 1%;
 }
 
 #linha-horizontal-menor {
-    width: 700px;
+    width: 760px;
     border: 1px solid #6d6b6b;
     margin-top: 1%;
     margin-left: 25%;
@@ -459,3 +459,31 @@ video {
     height: 55px;
 }
 
+.center-2{
+    margin-left: 25%;
+    margin-top: -59px;
+    margin-top: -2%;
+}
+
+.left-text-2{
+    margin-right: 19%;
+    margin-top: -69px;
+    text-align: right;
+    margin-top: -22px;
+}
+
+.left-text-3{
+    margin-right: 19%;
+    margin-top: -69px;
+    text-align: right;
+    margin-top: -22px;
+    margin-bottom: 15%;
+}
+
+.left-text-2 a {
+    text-decoration: none;
+}
+
+.left-text-3 a {
+    text-decoration: none;
+}
