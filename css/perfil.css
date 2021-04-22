@@ -398,35 +398,30 @@ video {
 }
 
 #linha-horizontal {
-    width: 1100px;
+    width: 100%;
     border: 1px solid #c4bebe;
     margin-top: 1%;
 }
-
 #linha-horizontal-menor {
-    width: 760px;
+    width: 75%;
     border: 1px solid #6d6b6b;
     margin-top: 1%;
     margin-left: 25%;
 }
 
 .center{
-    margin-left: 10%;
+    margin: 5% auto 0px auto;
+    width: 80%;
 }
 
 #left-text{
-    margin-left: 60%;
-    margin-top: -6px;
-}
-
-#ul-text{
-    margin-top: 5%;
+    text-align: right;
 }
 
 .rigth-text a{
     font-size: 14px;
     color: red;
-    text-decoration: none
+    text-decoration: none;
 }
 
 .rigth-text h2{
@@ -451,6 +446,7 @@ video {
 
 .left-text a {
     text-decoration: none;
+    color: blue;
 }
 
 #img-user{
@@ -470,6 +466,9 @@ video {
     margin-top: -69px;
     text-align: right;
     margin-top: -22px;
+}
+.left-text-2 a, .left-text-3 a{
+    color: blue;
 }
 
 .left-text-3{
