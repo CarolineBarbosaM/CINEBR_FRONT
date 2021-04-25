@@ -486,3 +486,91 @@ video {
 .left-text-3 a {
     text-decoration: none;
 }
+
+
+/* ALTERAÇÕES ABAIXO FEITAS POR: LUCAS LIMA*/
+
+
+/* Modal */
+.overlay-modal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0px;
+    left: 0px;
+    display: none;
+}
+.exibeModal{
+    display: inline !important;
+}
+.modal{
+    width: 40%;
+    height: auto;
+    background: #373737;
+    margin: 10% auto 0% auto;
+    border-radius: 10px;
+    transition: 0.8s;
+}
+.closeButton{
+    position: absolute;
+    cursor: pointer;
+}
+.closeButton p{
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    margin: 10px;
+}
+.closeButton img{
+    filter: invert(100%);
+    height: 16px;
+    width: auto !important;
+    margin-right: 10px;
+}
+.modal img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.modal-info{
+    padding: 5%;
+}
+.modal-info h1{
+    font-size: 32px;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.modal-info p, .modal-info .tags{
+    color: #fff;
+}
+.botao-acao{
+    margin-top: 2%;
+    width: auto;
+    padding: 0px 20px;
+    height: 40px;
+    background: #fafafa;
+    border: none;
+    color: #000;
+    font-size: 18px;
+    transition: 0.5s;
+    cursor: pointer;
+    outline: none;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+label {
+    font-size: large;
+}
+
+/* ALTERAÇÕES ACIMA FEITAS POR: LUCAS LIMA*/
