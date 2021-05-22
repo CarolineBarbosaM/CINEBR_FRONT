@@ -4,36 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="IMG/icon.png" />
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Login - CineBr</title>
 </head>
 <body>
-    <div id="body">
-       <div id="retangulo">
-        <img src="img/logobranca.svg" alt="CineBr">>
-        
-        <div class="">
+    <section class="fundo">
+        <div class="retangulo ret-login">
+            <img src="img/logobranca.svg" alt="CineBr">
+            <h1>Bem-Vindo ao CineBr</h1>
+            <h2>Entre para continuar</h2>
             <form action="home.html">
-                <label id="fname">Usuário</label>
-                <input type="email"  name="firstname" placeholder="email@dominio.com">
-            
-                <label id="lname">Senha</label>
-                <input type="password"  name="lastname" placeholder="...">
-
-                <label class="container">Manter Conectado
-                    <input type="checkbox" checked="checked">
-                    <span class="checkmark"></span>
-                </label>
-              
-                <input type="submit" value="Entrar">
-                
-                <div id="cad">
-                    <a href="cadastro.html" >Cadastre-se aqui</a>
+                <div class="left-box login-box">
+                    <label for="nome">Usuário: <input type="text" name="nome" placeholder="email@dominio.com.br" required></label>
+                    <label for="nome">Senha: <input type="password" name="nome" placeholder="Insira sua senha de acesso" required></label>
+                </div>
+                <div class="clear"></div>
+                <div class="submit">
+                    <a href="cadastro.html">Cadastre-se</a>
+                    <input type="submit" name="Entrar" value="Entrar" class="log-btn">
                 </div>
             </form>
         </div>
-
-       </div>
-    </div>
+    </section>
 </body>
 </html>

@@ -183,7 +183,8 @@
 .fundo{
     background-image: linear-gradient(to right, #0e1111, #3b444b, #0e1111);
     position: absolute;
-    height: 100%;
+    min-height: 100%;
+    height: auto;
     width: 100%;
 }
 .retangulo {
@@ -193,9 +194,14 @@
     margin: 2% auto;
     padding: 5%;
     border-radius: 10px;
+    margin-bottom: 5%;
+}
+.ret-login{
+    width: 30%;
 }
 .retangulo img{
-  height: 100px;
+  height: 90px;
+  margin-bottom: 20px;
 }
 .retangulo h1, .retangulo h2{
   color: #fff;
@@ -212,6 +218,10 @@
   float: left;
   color: #fff;
   text-align: left;
+}
+.login-box{
+    width: 100%;
+    float: none;
 }
 .left-box label, .right-box label{
   font-size: 14px;
@@ -243,8 +253,23 @@ select option{
 }
 .submit{
   float: right;
+  width: 100%;
 }
-.cad-btn{
+.submit a{
+    color: #fff;
+    text-decoration: none;
+    margin-right: 5%;
+    font-size: 14px;
+    color: #ccc;
+    transition: 0.5s;
+    padding: 5px;
+    border-bottom: 2px transparent solid;
+}
+.submit a:hover{
+    color: #fff;
+    border-bottom: 2px #fff solid;
+}
+.cad-btn, .log-btn{
   background: rgba(0, 0, 0, 0.2);
   outline: none;
   border: none;
@@ -253,11 +278,14 @@ select option{
   padding: 2px 30px;
   color: #fff;
   font-weight: bold;
-  margin-top: 50%;
+  margin-top: 5%;
   border-bottom: 2px transparent solid;
   transition: 0.5s;
 }
-.cad-btn:hover{
+.log-btn{
+    margin-top: 3%;
+}
+.cad-btn:hover, .log-btn:hover{
   border-bottom: 2px #fff solid;
   cursor: pointer;
 }
@@ -640,6 +668,64 @@ strong{
 .info-user button:hover{
     border-bottom: 2px #fff solid;
 }
+.name-user{
+    font-size: 18px !important;
+    border-bottom: 2px #fff solid !important;
+}
+.title-catalogo{
+    font-size: 28px;
+    color: #fff;
+    font-weight: bold;
+}
+.desc-catalogo{
+    color: #fff;
+    margin-top: 10px;
+}
+.new{
+    width: 90% !important;
+    background-color: red;
+    padding: 5%;
+}
+.novidades{
+    border-top: 2px #fff solid;
+    width: 94%;
+    margin-top: 3%;
+    padding: 2%;
+}
+.novidade{
+    border-bottom: 2px #ccc solid;
+    min-height: 80px;
+    height: auto;
+    padding: 2%;
+    margin-bottom: 2%;
+}
+.novidade h3{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.novidade p:first-of-type{
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.novidade p{
+    color: #fff;
+    text-align: justify;
+}
+.novidade button{
+    padding: 5px 20px;
+    border: none;
+    margin-top: 5%;
+    background: #353839;
+    color: #fff;
+    border-bottom: 2px #ccc solid;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.novidade button:hover{
+    background: #3b444b;
+    border-bottom: 2px #fff solid;
+}
 @media screen and (max-width: 1366px){
     .menu-sup ul li{
         font-size: 14px;
@@ -664,8 +750,8 @@ strong{
         height: 300px;
     }
     .titulo{
-        width: 180px;
-        height: 260px;
+        width: 160px;
+        height: 240px;
     }
     .modal{
         width: 50%;
