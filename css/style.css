@@ -726,6 +726,57 @@ strong{
     background: #3b444b;
     border-bottom: 2px #fff solid;
 }
+.edit-box{
+    width: 90%;;
+}
+.edit-box h1{
+    font-size: 22px;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.edit-box label{
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.edit-box input, .edit-box select{
+    width: 50%;
+    display: block;
+    height: 25px;
+    font-size: 14px;
+    padding: 5px 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px #fff solid;
+    color: #fff;
+    outline: none;
+}
+.edit-box input::placeholder{
+    color: #ccc !important;
+}
+.edit-box select{
+    height: 30px;
+}
+.termos{
+    padding-top: 5%;
+}
+.termos h1{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.termos p{
+    margin-bottom: 20px;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 25px;
+}
+.termos p:last-of-type{
+    margin-bottom: 10%;
+}
 @media screen and (max-width: 1366px){
     .menu-sup ul li{
         font-size: 14px;
