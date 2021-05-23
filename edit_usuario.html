@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>CineBr</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" type="image/png" href="IMG/icon.png" />
+    <link rel='stylesheet' type='text/css' href='css/style.css'>
+</head>
+<body>
+    <header class="barra-sup">
+        <div class="left-header">
+           <nav class="menu-sup">
+               <ul>
+                   <li class="active"><a href="home.html">Home</a></li>
+                   <li><a href="filmes.html">Filmes e Curtas</a></li>
+                   <li><a href="series.html">Séries</a></li>
+                   <li><a href="documentarios.html">Documentários</a></li>
+               </ul>
+           </nav>
+        </div>
+        <div class="middle-header middle-barra">
+            <img src="img/logobranca.svg" alt="CineBr">
+        </div>
+        <div class="right-header">
+            <nav class="menu-sup">
+                <ul>
+                    <li><a href="novidades.html">Novidades</a></li>
+                    <li class="name-user"><small>Luiz Eduardo</small></li>
+                    <li class="dropdown"><img src="img/bx_bxs-down-arrow.png" alt="Perfil Usuário">
+                        <ul class="options">
+                            <li><a href="configuracoes.html">Configurações</a></li>
+                            <li><a href="minha_lista.html">Minha Lista</a></li>
+                            <li class="logoff"><a href="index.html">Sair</a></li>
+                        </ul></li>
+                </ul>     
+            </nav>
+        </div>
+        <div class="clear"></div>
+    </header>
+
+    <section class="catalogo">
+        <form action="configuracoes.html">
+            <div class="edit-box">
+                <h1>Editar Informações</h1>
+                <label for="nome">Nome: <input type="text" name="nome" placeholder="Nome Completo" required></label>
+                <label for="dt_nasc">Data de Nascimento: <input type="date" name="dt_nasc" required></label>
+                <label for="genero">Gênero: <select name="genero" required>
+                    <option value="">Selecione uma opção</option>
+                    <option value="F">Feminino</option>
+                    <option value="M">Masculino</option>
+                    <option value="P">Prefiro não informar</option>
+                </select></label>
+                <label for="email">E-mail: <input type="email" name="email" placeholder="nome@dominio.com" required></label>
+                <label for="password">Senha: <input type="password" name="password" placeholder="senha aqui" required></label>
+                <label for="password1">Repeta a Senha: <input type="password1" name="password1" placeholder="senha aqui denovo" required></label>
+            </div>
+
+            <div class="clear"></div>
+
+            <div class="terms">
+                <label for="rec"><input type="checkbox" name="rec" checked="checked">Receber recomendações por e-mail</label>
+            </div>
+
+            <div class="clear"></div>
+
+            <div class="submit">
+                <input type="submit" name="salvar" value="Salvar" class="cad-btn">
+            </div>
+        </form>
+
+        <div class="clear"></div>
+
+        <div class="sec-title">
+            <h3>Recomendações</h3>
+            <div class="container-titulos">
+                <div class="row">
+                    <div class="titulos-catalogo">
+                        <div class="titulo"><img src="img/demoposter.jpg" alt=""></div>
+                        <div class="titulo"><img src="img/demoposter.jpg" alt=""></div>
+                        <div class="titulo"><img src="img/demoposter.jpg" alt=""></div>
+                        <div class="titulo"><img src="img/demoposter.jpg" alt=""></div>
+                        <div class="titulo"><img src="img/demoposter.jpg" alt=""></div>
+                        <div class="titulo"><img src="img/demoposter.jpg" alt=""></div>
+                        <div class="titulo"><img src="img/demoposter.jpg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <footer class="main-footer">
+        <div class="left-footer">
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="filmes.html">Filmes e Curtas</a></li>
+                    <li><a href="series.html">Séries</a></li>
+                    <li><a href="documentarios.html">Documentários</a></li>
+                    <li><a href="novidades.html">Novidades</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="middle-footer">
+            <section class="social-icons">
+                <img src="img/facebook.png" alt="Facebook CineBr">
+                <img src="img/instagram.png" alt="Instagram CineBr">
+                <img src="img/youtube.png" alt="YouTube CineBr">
+            </section>
+            <section class="footer-logo">
+                <img src="img/logobranca.svg" alt="CineBr">
+                <p>CineBr © 2021 - Todos os direitos reservados.</p>
+            </section>
+        </div>
+        <div class="right-footer">
+            <nav>
+                <ul>
+                    <li><a href="configuracoes.html">Configurações</a></li>
+                    <li><a href="termosDeUso.html">Termos de serviço</a></li>
+                    <li><a href="contato.html">Entre em contato</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="clear"></div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
