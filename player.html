@@ -2,13 +2,93 @@
 <html>
 <head>
     <meta charset='utf-8'>
-    <title>CineBr</title>
+    <title>CineBr - Player</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="icon" type="image/png" href="IMG/icon.png" />
     <link rel='stylesheet' type='text/css' href='css/style.css'>
+    <script type="text/javascript" src="complementos/player/afterglow/dist/afterglow.min.js"></script>
+    <style>
+        body{
+			height: 100%;
+            width: 100%;
+            background-image: linear-gradient(to right, #0e1111, #3b444b, #0e1111);
+		}
+        .player{
+            width: 70%;
+            margin: 1% auto 0% auto;
+        }
+        .player-bar{
+            height: 150px;
+        }
+        .player-bar .middle-header{
+            line-height: 20px;
+        }
+        .player-bar .middle-header img{
+            margin-top: 20px;
+        }
+        .player-bar .right-header{
+            line-height: 20px;
+            height: 110px;
+            width: 50%;
+            text-align: left;
+        }
+        .player-bar .right-header p{
+            font-size: 16px;
+            height: 80px;
+            overflow-y: scroll;
+        }
+        .player-bar .right-header p:first-of-type{
+            font-size: 25px;
+            margin-top: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            height: 25px;
+            overflow-y: hidden;
+        }
+        .player-bar .right-header p::-webkit-scrollbar{
+            width: 0px;
+        }
+    </style>
 </head>
 <body>
-    <p>Em Desenvolvimento</p>
-    <script src="js/script.js"></script>
+    <header class="barra-sup player-bar">
+        <div class="middle-header middle-barra">
+            <img src="img/logobranca.svg" alt="CineBr">
+            <p style="cursor: pointer;" onclick="window.location.href='home.html'">Voltar ao catálogo</p>
+        </div>
+        <div class="right-header">
+           <p>Como se o céu fosse oceano</p>
+           <p>Belo Horizonte. Encontro de corpos que compartilham, cada um à sua maneira,
+            anseios, histórias, afetos, medos e existências, tudo isso com a cidade de pano
+            de fundo. Jovens atravessados por diferentes experiências sociais ocupando a
+            cidade e criando suas próprias narrativas de vida.</p>
+        </div>
+        <div class="clear"></div>
+    </header>
+
+    <div class="player">
+        <video id="video2" class="afterglow" width="1920" height="1000" poster="img/banners/como-se-o-ceu-fosse-oceano.png" preload="none">
+            <source src="midia/comoseoceufosseoceano/midia.mp4" type="video/mp4" />
+        </video>
+    </div>
+
+    <section class="catalogo" style="background: transparent;">
+        <div class="sec-title">
+            <h3>Recomendações</h3>
+            <div class="container-titulos">
+                <div class="row">
+                    <div class="titulos-catalogo">
+                        <div class="titulo"><img src="img/demoposter.jpg" alt=""></div>
+                        <div class="titulo"><img src="img/demoposter.jpg" alt=""></div>
+                        <div class="titulo"><img src="img/demoposter.jpg" alt=""></div>
+                        <div class="titulo"><img src="img/demoposter.jpg" alt=""></div>
+                        <div class="titulo"><img src="img/demoposter.jpg" alt=""></div>
+                        <div class="titulo"><img src="img/demoposter.jpg" alt=""></div>
+                        <div class="titulo"><img src="img/demoposter.jpg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
