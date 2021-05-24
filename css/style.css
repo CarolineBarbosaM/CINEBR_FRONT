@@ -777,6 +777,82 @@ strong{
 .termos p:last-of-type{
     margin-bottom: 10%;
 }
+.poster-serie{
+    width: 20%;
+    height: 300px;
+    text-align: center;
+    float: left;
+}
+.info-serie{
+    width: 70%;
+    float: left;
+    color: #fff;
+}
+.info-serie h1{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.info-serie p{
+    font-size: 16px;
+    line-height: 20px;
+}
+.serie-eps{
+    float: left;
+    width: 30%;
+    margin-top: 20px;
+}
+.serie-eps select{
+    border: 1px #fff solid !important;
+}
+.episodios{
+    margin-top: 2%;
+    width: 90%;
+    border-top: 2px #ccc solid;
+    padding-top: 2%;
+}
+.ep{
+    margin-bottom: 30px;
+}
+.img-ep{
+    width: 30%;
+    float: left;
+    height: 185px;
+}
+.img-ep img{
+    width: 100%;
+    border-radius: 5px;
+}
+.info-ep{
+    float: left;
+    width: 67%;
+    height: 185px;
+    padding: 0px 0px 0px 3%;
+    color: #fff;
+}
+.info-ep h2{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.info-ep p{
+    font-size: 16px;
+    line-height: 20px;
+    text-align: justify;
+    height: 100px;
+}
+.info-ep button{
+    padding: 5px 15px;
+    border: 2px transparent solid;
+    background: #353839;
+    color: #fff;
+    cursor: pointer;
+    border-bottom: 2px #fff solid;
+    transition: 0.5s;
+}
+.info-ep button:hover{
+    border: 2px #fff solid;
+}
 @media screen and (max-width: 1366px){
     .menu-sup ul li{
         font-size: 14px;
