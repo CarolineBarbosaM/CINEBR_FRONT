@@ -6,38 +6,14 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="icon" type="image/png" href="IMG/icon.png" />
     <link rel='stylesheet' type='text/css' href='css/style.css'>
+    <script>
+        page = 0;
+    </script>
 </head>
 <body>
-    <header class="barra-sup">
-        <div class="left-header">
-           <nav class="menu-sup">
-               <ul>
-                   <li><a href="home.html">Home</a></li>
-                   <li><a href="filmes.html">Filmes e Curtas</a></li>
-                   <li><a href="series.html">Séries</a></li>
-                   <li><a href="documentarios.html">Documentários</a></li>
-               </ul>
-           </nav>
-        </div>
-        <div class="middle-header middle-barra">
-            <img src="img/logobranca.svg" alt="CineBr">
-        </div>
-        <div class="right-header">
-            <nav class="menu-sup">
-                <ul>
-                    <li><a href="novidades.html">Novidades</a></li>
-                    <li class="name-user"><small>Luiz Eduardo</small></li>
-                    <li class="dropdown"><img src="img/bx_bxs-down-arrow.png" alt="Perfil Usuário">
-                        <ul class="options">
-                            <li><a href="configuracoes.html">Configurações</a></li>
-                            <li><a href="minha_lista.html">Minha Lista</a></li>
-                            <li class="logoff"><a href="index.html">Sair</a></li>
-                        </ul></li>
-                </ul>     
-            </nav>
-        </div>
-        <div class="clear"></div>
-    </header>
+    
+    <div include="header.html"></div>
+
     <section class="catalogo">
         <div class="sec-title">
             <h3>Minha Lista de Filmes e Curtas</h3>
@@ -118,39 +94,11 @@
         </div>
     </div>
     
-    <footer class="main-footer">
-        <div class="left-footer">
-            <nav>
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="filmes.html">Filmes e Curtas</a></li>
-                    <li><a href="series.html">Séries</a></li>
-                    <li><a href="documentarios.html">Documentários</a></li>
-                    <li><a href="novidades.html">Novidades</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="middle-footer">
-            <section class="social-icons">
-                <img src="img/facebook.png" alt="Facebook CineBr">
-                <img src="img/instagram.png" alt="Instagram CineBr">
-                <img src="img/youtube.png" alt="YouTube CineBr">
-            </section>
-            <section class="footer-logo">
-                <img src="img/logobranca.svg" alt="CineBr">
-                <p>CineBr © 2021 - Todos os direitos reservados.</p>
-            </section>
-        </div>
-        <div class="right-footer">
-            <nav>
-                <ul>
-                    <li><a href="configuracoes.html">Configurações</a></li>
-                    <li><a href="termosDeUso.html">Termos de serviço</a></li>
-                    <li><a href="contato.html">Entre em contato</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="clear"></div>
-    </footer>
+    <div include="footer.html"></div>
+
+    <script src="js/script.js"></script>
+    <script>
+        includeHTML();
+    </script>
 </body>
 </html>
