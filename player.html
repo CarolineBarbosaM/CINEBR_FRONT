@@ -7,50 +7,8 @@
     <link rel="icon" type="image/png" href="IMG/icon.png" />
     <link rel='stylesheet' type='text/css' href='css/style.css'>
     <script type="text/javascript" src="complementos/player/afterglow/dist/afterglow.min.js"></script>
-    <style>
-        body{
-			height: 100%;
-            width: 100%;
-            background-image: linear-gradient(to right, #0e1111, #3b444b, #0e1111);
-		}
-        .player{
-            width: 70%;
-            margin: 1% auto 0% auto;
-        }
-        .player-bar{
-            height: 150px;
-        }
-        .player-bar .middle-header{
-            line-height: 20px;
-        }
-        .player-bar .middle-header img{
-            margin-top: 20px;
-        }
-        .player-bar .right-header{
-            line-height: 20px;
-            height: 110px;
-            width: 50%;
-            text-align: left;
-        }
-        .player-bar .right-header p{
-            font-size: 16px;
-            height: 80px;
-            overflow-y: scroll;
-        }
-        .player-bar .right-header p:first-of-type{
-            font-size: 25px;
-            margin-top: 20px;
-            font-weight: bold;
-            margin-bottom: 10px;
-            height: 25px;
-            overflow-y: hidden;
-        }
-        .player-bar .right-header p::-webkit-scrollbar{
-            width: 0px;
-        }
-    </style>
 </head>
-<body>
+<body class="player-body">
     <header class="barra-sup player-bar">
         <div class="middle-header middle-barra">
             <img src="img/logobranca.svg" alt="CineBr">
@@ -90,5 +48,12 @@
             </div>
         </div>
     </section>
+
+    <div include="footer.html"></div>
+
+    <script src="js/script.js"></script>
+    <script>
+        includeHTML();
+    </script>
 </body>
 </html>
