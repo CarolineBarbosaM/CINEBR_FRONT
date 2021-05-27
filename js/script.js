@@ -33,33 +33,33 @@ function oc(){
 
 // Includes HTML
 function includeHTML() {
-    var z, i, elmnt, file, xhttp;
-    /*percorre pelo html pegando todos os seletores:*/
-    z = document.getElementsByTagName("*");
-    for (i = 0; i < z.length; i++) {
-      elmnt = z[i];
-      /*pesquisa pelo elemento com o atributo abaixo:*/
-      file = elmnt.getAttribute("include");
-      if (file) {
-        /*abre uma solicitação HTTP para usar o conteúdo do atributo como nome da página solicitada:*/
-        xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-          if (this.readyState == 4) {
-            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-            if (this.status == 404) {elmnt.innerHTML = "Opa! Erro em include.";}
-            /*remove o atributo e chama a função novamente:*/
-            elmnt.removeAttribute("include");
-            includeHTML();
-          }
-        }      
-        xhttp.open("GET", file, true);
-        xhttp.send();
-        /*saída da função:*/
-        return;
-      }
+  var z, i, elmnt, file, xhttp;
+  /*percorre pelo html pegando todos os seletores:*/
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*pesquisa pelo elemento com o atributo abaixo:*/
+    file = elmnt.getAttribute("include");
+    if (file) {
+      /*abre uma solicitação HTTP para usar o conteúdo do atributo como nome da página solicitada:*/
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Opa! Erro em include.";}
+          /*remove o atributo e chama a função novamente:*/
+          elmnt.removeAttribute("include");
+          includeHTML();
+        }
+      }      
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /*saída da função:*/
+      return;
     }
-    menuConfig();
-  };
+  }
+  menuConfig();
+};
 
 // Class menu active
 function menuConfig(){
@@ -78,6 +78,8 @@ function menuConfig(){
       break;
     case 5:
       document.getElementById(5).classList.add('active');
+      break;
+    case 0:
       break;
   }
 }
