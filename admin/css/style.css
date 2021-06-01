@@ -1,0 +1,163 @@
+@import url(../../css/reset.css);
+@import url(../../css/fonte.css);
+
+
+*{
+    font-family: 'Nunito', sans-serif !important;
+}
+.barra-lateral{
+    width: 15%;
+    height: 100%;
+    background-image: linear-gradient(to top, #0e1111, #3b444b);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+.logo-sec{
+    width: 100%;
+    height: 15%;
+    text-align: center;
+    margin-top: 10%;
+}
+.logo-sec img{
+    width: 90%;
+}
+.content{
+    width: 81%;
+    height: 96%;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    overflow-y: scroll;
+    padding: 2%;
+    background: #6f787e;
+}
+.content::-webkit-scrollbar{
+    background: rgba(0,0,0,0.3);
+    width: 10px;
+}
+.content::-webkit-scrollbar-thumb{
+    background: rgba(0,0,0,5);
+    border-radius: 5px;
+}
+.menu{
+    color: #fff;
+}
+.menu ul{
+    margin: 20% auto;
+    padding: 0px;
+}
+.menu ul li{
+    list-style: none;
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 10%;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.menu ul li:hover{
+    background: #0e1111;
+    padding-left: 15%;
+}
+.active{
+    background: #0e1111;
+}
+.mini-box{
+    width: 280px;
+    height: 130px;
+    background: #3b444b;
+    border-radius: 10px;
+    border-bottom: 5px #0e1111 solid;
+    transition: 0.5s;
+    padding: 20px;
+    color: #fff;
+    display: block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    float: left;
+}
+.mini-box:hover{
+    box-shadow: 5px 5px 20px #0e1111;
+}
+.mini-box h1{
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.mini-box p{
+    height: 25px;
+    line-height: 25px;
+    font-weight: normal;
+}
+.mini-box p small{
+    float: right;
+    font-weight: bold;
+}
+.box{
+    width: 960px;
+    height: auto;
+    background: #3b444b;
+    border-radius: 10px;
+    border-bottom: 5px #0e1111 solid;
+    transition: 0.5s;
+    padding: 20px;
+    color: #fff;
+    display: block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    float: left;
+}
+.box:hover{
+    box-shadow: 5px 5px 20px #0e1111;
+}
+.box h1{
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.box p{
+    height: 25px;
+    line-height: 25px;
+    font-weight: normal;
+}
+.box p small{
+    float: right;
+    font-weight: bold;
+}
+button{
+    background: #0e1111;
+    border: none;
+    height: auto;
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+table{
+    margin-top: 50px;
+    width: 100%;
+}
+table th{
+    height: 50px;
+    line-height: 50px;
+    background: #0e1111;
+    color: #fff;
+    font-weight: bold;
+}
+table td{
+    width: auto;
+    height: 50px;
+    line-height: 50px;
+    padding: 0px 10px;
+    text-align: center;
+    border-bottom: 1px #000 solid;
+    color: #fff;
+}
+.cont{
+    margin-left: 10px;
+    color: #fff;
+}
+.clear{
+    clear: both;
+}

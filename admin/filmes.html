@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="IMG/icon.png" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Painel Administrativo - CineBr</title>
+    <script>
+        page = 2;
+    </script>
+</head>
+<body>
+    <div include="barra.html"></div>
+    
+    <section class="content">
+        <button>Cadastrar Novo</button>
+        <small class="cont">Total de cadastros: 1</small>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Categoria</th>
+                    <th>Data Cadastro</th>
+                    <th>Status</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>#00001</td>
+                    <td>Como se o ceu fosse oceano</td>
+                    <td>Curta</td>
+                    <td>05/07/1999</td>
+                    <td>Ativo</td>
+                    <td><button>Abrir</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <script src="../js/script.js"></script>
+    <script>
+        includeHTML();
+    </script>
+</body>
+</html>
