@@ -79,6 +79,15 @@ function menuConfig(){
     case 5:
       document.getElementById(5).classList.add('active');
       break;
+    case 6:
+      document.getElementById(6).classList.add('active');
+      break;
+    case 7:
+      document.getElementById(7).classList.add('active');
+      break;
+    case 8:
+      document.getElementById(8).classList.add('active');
+      break;
     case 0:
       break;
   }

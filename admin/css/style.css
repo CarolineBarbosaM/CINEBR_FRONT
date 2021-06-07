@@ -65,7 +65,8 @@
 }
 .mini-box{
     width: 280px;
-    height: 130px;
+    height: auto;
+    min-height: 130px;
     background: #3b444b;
     border-radius: 10px;
     border-bottom: 5px #0e1111 solid;
@@ -124,6 +125,15 @@
 .box p small{
     float: right;
     font-weight: bold;
+}
+.box-actions{
+    cursor: pointer;
+    margin-top: 15px;
+}
+.box img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 button{
     background: #0e1111;

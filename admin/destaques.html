@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../IMG/icon.png" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Painel Administrativo - CineBr</title>
+    <script>
+        page = 6;
+    </script>
+</head>
+<body>
+    <div include="barra.html"></div>
+    
+    <section class="content">
+        <div class="box">
+            <h1>Destaque da tela inicial</h1>
+            <img src="../img/banners/como-se-o-ceu-fosse-oceano.png" alt="Como se o céu fosse oceano">
+            <p>Título: <small>Como se o céu fosse oceano</small></p>
+            <p>Data de inserção: <small>05/07/2021</small></p>
+            <p>Categoria: <small>Curta</small></p>
+            <div class="box-actions">
+                <button>Editar</button> <button>Trocar destaque</button>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="mini-box">
+            <h1>Novos conteúdos</h1>
+            <p>Filmes e curtas <small>10</small></p>
+            <p>Séries <small>10</small></p>
+            <p>Documentários <small>10</small></p>
+            <div class="box-actions">
+                <button>Editar</button> <button>Novo</button>
+            </div>
+        </div>
+        <div class="mini-box">
+            <h1>Recomendação para usuários</h1>
+            <p>Recomendados <small>10</small></p>
+            <div class="box-actions">
+                <button>Editar</button> <button>Novo</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="../js/script.js"></script>
+    <script>
+        includeHTML();
+    </script>
+</body>
+</html>
