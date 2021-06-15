@@ -6,6 +6,7 @@
     <link rel="icon" type="image/png" href="../IMG/icon.png" />
     <link rel="stylesheet" href="../css/style.css">
     <title>Login - CineBr</title>
+    <script src="../services/functions.js"></script>
 </head>
 <body>
     <section class="fundo">
@@ -13,10 +14,10 @@
             <img src="../img/logobranca.svg" alt="CineBr">
             <h1>Painel Administrativo CineBr</h1>
             <h2>Entre para continuar</h2>
-            <form action="home.html">
+            <form method="POST" action="" onsubmit="loginAdmin()">
                 <div class="left-box login-box">
-                    <label for="nome">Usuário: <input type="text" name="nome" placeholder="Usuário de Acesso" required></label>
-                    <label for="senha">Senha: <input type="password" name="senha" placeholder="Senha de acesso" required></label>
+                    <label for="email">Usuário: <input type="text" name="email" placeholder="Usuário de Acesso" required id="email"></label>
+                    <label for="senha">Senha: <input type="password" name="password" placeholder="Senha de acesso" required id="senha"></label>
                 </div>
                 <div class="clear"></div>
                 <div class="submit">
@@ -26,5 +27,6 @@
             </form>
         </div>
     </section>
+    
 </body>
 </html>
