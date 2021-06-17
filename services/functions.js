@@ -78,6 +78,41 @@ function novoNovidade(){
 function novoDestaque(){
 
 }
-function novoCadastroAdmin(){
 
+function fazerPost(url, body) {
+    console.log("Body=", body);
+
+    const request = new XMLHttpRequest();
+    request.open("POST", url, true)
+    request.setRequestHeader("Content-type", "application/json")
+    request.send(JSON.stringify(body))
+
+    request.onload = function() {
+        console.log(this.responseText);
+    }
+
+    return request.responseText
+}
+
+function novoCadastroUsuario(){
+    event.preventDefault()
+    const url = 'http://127.0.0.1:3333/user/create'
+
+    const nome = document.getElementById("nome").value;
+    const email = document.getElementById("email").value;
+    const dt_nasc = document.getElementById("dt_nasc").value;
+    const password = document.getElementById("password").value;
+    const sexo = document.getElementById("genero").value;
+    const profile = "9fc86d1c-9637-4818-830c-21243fff3b06";
+
+    body = {
+        "name_user": nome,
+        "email": email,
+        "dt_nascimento": dt_nasc,
+        "password": password,
+        "sexo": sexo,
+        "profile": profile
+    }
+
+    fazerPost(url, body)
 }
