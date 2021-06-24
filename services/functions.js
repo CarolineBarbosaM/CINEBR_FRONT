@@ -8,7 +8,7 @@ function listAll(url) {
         }
     }
     request.send();
-    // return request.responseText;
+ return request.responseText;
 }
 
 function userList() {
@@ -36,20 +36,17 @@ function loginAdmin(){
     }
     request.send(parametros);
 }
-function sessaoAdmin(){
-
-}
-function fecharSessaoAdmin(){
-
-}
 function homeConteudo(){
 
 }
 function listarFilmesCurtasCadastrados(){
-
+   var todosFilmes= listAll("http://127.0.0.1:3333/filmes/listAll")
+   return todosFilmes
 }
-function listarSeries(){
 
+function listarSeries(){
+    var todosSeries= listAll("http://127.0.0.1:3333/filmes/listAll")
+    return todosSeries
 }
 function listarDocumentarios(){
 
@@ -58,9 +55,6 @@ function listarNovidades(){
 
 }
 function listarDestaques(){
-
-}
-function listarCadastrosAdmin(){
 
 }
 function novoFilmeCurta(){
