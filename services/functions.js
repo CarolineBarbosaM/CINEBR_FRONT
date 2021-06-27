@@ -8,7 +8,7 @@ function listAll(url) {
         }
     }
     request.send();
-    // return request.responseText;
+ return request.responseText;
 }
 
 function userList() {
@@ -36,20 +36,17 @@ function loginAdmin(){
     }
     request.send(parametros);
 }
-function sessaoAdmin(){
-
-}
-function fecharSessaoAdmin(){
-
-}
 function homeConteudo(){
 
 }
 function listarFilmesCurtasCadastrados(){
-
+   var todosFilmes= listAll("http://127.0.0.1:3333/filmes/listAll")
+   return todosFilmes
 }
-function listarSeries(){
 
+function listarSeries(){
+    var todosSeries= listAll("http://127.0.0.1:3333/filmes/listAll")
+    return todosSeries
 }
 function listarDocumentarios(){
 
@@ -60,15 +57,53 @@ function listarNovidades(){
 function listarDestaques(){
 
 }
-function listarCadastrosAdmin(){
 
-}
 function novoFilmeCurta(){
+    event.preventDefault()
+    const url = 'http://127.0.0.1:3333/filmes/create'
 
+    const titulo = document.getElementById("titulo").value;
+    const ano = document.getElementById("ano").value;
+    const sinopse = document.getElementById("sinopse").value;
+    const classificacao = document.getElementById("classificacao").value;
+    const capa = document.getElementById("capa").value;
+    const id_ator = document.getElementById("id_ator").value;
+    const id_categoria = document.getElementById("id_categoria").value;
+
+    body = {
+        "titulo": titulo,
+        "ano": ano,
+        "sinopse": sinopse,
+        "classificacao": classificacao,
+        "capa": capa,
+        "id_ator": id_ator,
+        "id_categoria": id_categoria
+    }
+
+    fazerPost(url, body)
 }
+
 function novoSerie(){
+    event.preventDefault()
+    const url = 'http://127.0.0.1:3333/series/create'
 
+    const titulo = document.getElementById("titulo").value;
+    const ano = document.getElementById("ano").value;
+    const sinopse = document.getElementById("sinopse").value;
+    const classificacao = document.getElementById("classificacao").value;
+    const capa = document.getElementById("capa").value;
+
+    body = {
+        "titulo": titulo,
+        "ano": ano,
+        "sinopse": sinopse,
+        "classificacao": classificacao,
+        "capa": capa
+    }
+
+    fazerPost(url, body)
 }
+
 function novoDocumentario(){
 
 }
