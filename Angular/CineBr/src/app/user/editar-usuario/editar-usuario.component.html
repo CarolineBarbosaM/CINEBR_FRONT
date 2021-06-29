@@ -1,0 +1,54 @@
+<app-header></app-header>
+
+<section class="catalogo">
+    <form action="/configuracoes">
+        <div class="edit-box">
+            <h1>Editar Informações</h1>
+            <label for="nome">Nome: <input type="text" name="nome" placeholder="Nome Completo" required></label>
+            <label for="dt_nasc">Data de Nascimento: <input type="date" name="dt_nasc" required></label>
+            <label for="genero">Gênero: <select name="genero" required>
+                <option value="">Selecione uma opção</option>
+                <option value="F">Feminino</option>
+                <option value="M">Masculino</option>
+                <option value="P">Prefiro não informar</option>
+            </select></label>
+            <label for="email">E-mail: <input type="email" name="email" placeholder="nome@dominio.com" required></label>
+            <label for="password">Senha: <input type="password" name="password" placeholder="senha aqui" required></label>
+            <label for="password1">Repeta a Senha: <input type="password1" name="password1" placeholder="senha aqui denovo" required></label>
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="terms">
+            <label for="rec"><input type="checkbox" name="rec" checked="checked">Receber recomendações por e-mail</label>
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="submit">
+            <input type="submit" name="salvar" value="Salvar" class="cad-btn">
+        </div>
+    </form>
+
+    <div class="clear"></div>
+
+    <div class="sec-title">
+        <h3>Recomendações</h3>
+        <div class="container-titulos">
+            <div class="row">
+                <div class="titulos-catalogo">
+                    <div class="titulo"><img src="/assets/demoposter.jpg" alt=""></div>
+                    <div class="titulo"><img src="/assets/demoposter.jpg" alt=""></div>
+                    <div class="titulo"><img src="/assets/demoposter.jpg" alt=""></div>
+                    <div class="titulo"><img src="/assets/demoposter.jpg" alt=""></div>
+                    <div class="titulo"><img src="/assets/demoposter.jpg" alt=""></div>
+                    <div class="titulo"><img src="/assets/demoposter.jpg" alt=""></div>
+                    <div class="titulo"><img src="/assets/demoposter.jpg" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+<app-footer></app-footer>

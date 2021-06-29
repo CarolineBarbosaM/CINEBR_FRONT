@@ -1,0 +1,19 @@
+<section class="fundo">
+    <div class="retangulo ret-login">
+        <img src="/assets/logobranca.svg" alt="CineBr">
+        <h1>Bem-Vindo ao CineBr</h1>
+        <h2>Entre para continuar</h2>
+        <form>
+            <div class="left-box login-box">
+                <label for="nome">Usuário: <input type="text" name="nome" placeholder="email@dominio.com.br" required></label>
+                <label for="senha">Senha: <input type="password" name="senha" placeholder="Insira sua senha de acesso" required></label>
+            </div>
+            <div class="clear"></div>
+            <div class="submit">
+                <a routerLink="/cadastro">Cadastre-se</a>
+                <a routerLink="/recuperarSenha">Recuperar Senha</a>
+                <input type="submit" name="Entrar" value="Entrar" class="log-btn" (click)="LogOn()">
+            </div>
+        </form>
+    </div>
+</section>

@@ -1,0 +1,34 @@
+<section class="fundo">
+    <div class="retangulo">
+        <img src="/assets/logobranca.svg" alt="CineBr">
+        <h1>Bem-Vindo ao CineBr</h1>
+        <h2>Realize seu cadastro para começar</h2>
+        <form>
+            <div class="left-box">
+                <label for="nome">Nome: <input type="text" name="nome" placeholder="Nome Completo" required ></label>
+                <label for="dt_nasc">Data de Nascimento: <input type="date" name="dt_nasc" required ></label>
+                <label for="genero">Gênero: <select name="genero" required>
+                    <option value="">Selecione uma opção</option>
+                    <option value="F">Feminino</option>
+                    <option value="M">Masculino</option>
+                    <option value="P">Prefiro não informar</option>
+                </select></label>
+            </div>
+            <div class="right-box">
+                <label for="email">E-mail: <input type="email" name="email" placeholder="nome@dominio.com" required ></label>
+                <label for="password">Senha: <input type="password" name="password" placeholder="senha aqui" required ></label>
+                <label for="password1">Repita a Senha: <input type="password1" name="password1" placeholder="senha aqui denovo" required></label>
+            </div>
+            <div class="clear"></div>
+            <div class="terms">
+                <label for="term"><input type="checkbox" name="term" checked="checked">Aceito os termos de uso</label><br>
+                <label for="rec"><input type="checkbox" name="rec" checked="checked">Receber recomendações por e-mail</label>
+            </div>
+            <div class="clear"></div>
+            <div class="submit">
+                <a routerLink="/login">Entrar</a>
+                <input type="submit" name="cadastrar" value="Cadastrar-se" class="cad-btn" routerLink="/">
+            </div>
+        </form>
+    </div>
+</section>
