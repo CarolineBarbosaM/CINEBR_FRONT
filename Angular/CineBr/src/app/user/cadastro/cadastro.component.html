@@ -3,11 +3,11 @@
         <img src="/assets/logobranca.svg" alt="CineBr">
         <h1>Bem-Vindo ao CineBr</h1>
         <h2>Realize seu cadastro para começar</h2>
-        <form>
+        <form [formGroup]="cadastroForm" (ngSubmit)="cadastrar()" novalidate>
             <div class="left-box">
-                <label for="nome">Nome: <input type="text" name="nome" placeholder="Nome Completo" required ></label>
-                <label for="dt_nasc">Data de Nascimento: <input type="date" name="dt_nasc" required ></label>
-                <label for="genero">Gênero: <select name="genero" required>
+                <label for="nome">Nome: <input type="text" name="nome" placeholder="Nome Completo" required formControlName="name_user"></label>
+                <label for="dt_nasc">Data de Nascimento: <input type="date" name="dt_nasc" required formControlName="dt_nascimento"></label>
+                <label for="genero">Gênero: <select name="genero" required formControlName="sexo">
                     <option value="">Selecione uma opção</option>
                     <option value="F">Feminino</option>
                     <option value="M">Masculino</option>
@@ -15,9 +15,9 @@
                 </select></label>
             </div>
             <div class="right-box">
-                <label for="email">E-mail: <input type="email" name="email" placeholder="nome@dominio.com" required ></label>
-                <label for="password">Senha: <input type="password" name="password" placeholder="senha aqui" required ></label>
-                <label for="password1">Repita a Senha: <input type="password1" name="password1" placeholder="senha aqui denovo" required></label>
+                <label for="email">E-mail: <input type="email" name="email" placeholder="nome@dominio.com" required formControlName="email"></label>
+                <label for="password">Senha: <input type="password" name="password" placeholder="senha aqui" required formControlName="password"></label>
+                <label for="password1">Repita a Senha: <input type="password" name="password1" placeholder="senha aqui denovo" required></label>
             </div>
             <div class="clear"></div>
             <div class="terms">
@@ -27,7 +27,7 @@
             <div class="clear"></div>
             <div class="submit">
                 <a routerLink="/login">Entrar</a>
-                <input type="submit" name="cadastrar" value="Cadastrar-se" class="cad-btn" routerLink="/">
+                <input type="submit" name="cadastrar" value="Cadastrar-se" class="cad-btn">
             </div>
         </form>
     </div>

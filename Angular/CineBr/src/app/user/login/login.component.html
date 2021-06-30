@@ -3,16 +3,16 @@
         <img src="/assets/logobranca.svg" alt="CineBr">
         <h1>Bem-Vindo ao CineBr</h1>
         <h2>Entre para continuar</h2>
-        <form>
+        <form [formGroup]="loginForm" (ngSubmit)="login()" novalidate>
             <div class="left-box login-box">
-                <label for="nome">Usuário: <input type="text" name="nome" placeholder="email@dominio.com.br" required></label>
-                <label for="senha">Senha: <input type="password" name="senha" placeholder="Insira sua senha de acesso" required></label>
+                <label for="email">Usuário: <input type="text" name="email" placeholder="email@dominio.com.br" required formControlName="email"></label>
+                <label for="password">Senha: <input type="password" name="password" placeholder="Insira sua senha de acesso" required formControlName="password"></label>
             </div>
             <div class="clear"></div>
             <div class="submit">
                 <a routerLink="/cadastro">Cadastre-se</a>
                 <a routerLink="/recuperarSenha">Recuperar Senha</a>
-                <input type="submit" name="Entrar" value="Entrar" class="log-btn" (click)="LogOn()">
+                <input type="submit" name="Entrar" value="Entrar" class="log-btn">
             </div>
         </form>
     </div>
