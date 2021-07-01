@@ -15,6 +15,9 @@ import { ErrorHandleService } from '../errorHandler/error-handle.service';
 export class MidiasService {
 
   private url = "http://127.0.0.1:3333/filmes/listAll";
+  private urlSeries = "http://127.0.0.1:3333/series/listAll";
+
+  private urlDocs = "http://127.0.0.1:3333/documentarios/listAll";
 
   httpOptions: { headers: HttpHeaders } = {
     headers: new HttpHeaders({ "Content-Type": "application/json" }),
@@ -33,7 +36,19 @@ export class MidiasService {
       );
   }
 
-  listar(){
-    this.http.get(this.url).subscribe(resultado => console.log(resultado));
+  fetchSeries(): Observable<Midias[]> {
+    return this.http
+      .get<Midias[]>(this.urlSeries, { responseType: "json" })
+      .pipe(
+        catchError(this.errorHandlerService.handleError<Midias[]>("fetchSeries", []))
+      );
+  }
+
+  fetchDocumentarios(): Observable<Midias[]> {
+    return this.http
+      .get<Midias[]>(this.urlDocs, { responseType: "json" })
+      .pipe(
+        catchError(this.errorHandlerService.handleError<Midias[]>("fetchDocumentarios", []))
+      );
   }
 }

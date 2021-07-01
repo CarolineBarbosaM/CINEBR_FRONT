@@ -13,7 +13,9 @@ import { User } from 'src/app/models/User';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  midias$: void;
+  midias$: Observable<Midias[]>;
+  series$: Observable<Midias[]>;
+  documentarios$: Observable<Midias[]>;
   userId: Pick<User, "id">;
 
   constructor(
@@ -22,12 +24,20 @@ export class HomeComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.midias$ = this.get();
+    this.midias$ = this.fetchAll();
+    this.series$ = this.fetchSeries();
     this.userId = this.authService.userId;
   }
 
-  get(){
-    return this.midiaService.listar();
+  fetchAll(): Observable<Midias[]> {
+    return this.midiaService.fetchAll();
   }
 
+  fetchSeries(): Observable<Midias[]> {
+    return this.midiaService.fetchSeries();
+  }
+
+  fetchDocumentario(): Observable<Midias[]> {
+    return this.midiaService.fetchDocumentarios();
+  }
 }

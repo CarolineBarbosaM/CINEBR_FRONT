@@ -49,7 +49,7 @@ function listarSeries(){
     return todosSeries
 }
 function listarDocumentarios(){
-
+    
 }
 function listarNovidades(){
 
