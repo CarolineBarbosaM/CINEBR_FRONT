@@ -18,7 +18,7 @@ export class AutenticarService {
   private urlLogin = "http://127.0.0.1:3333/auth";
 
   isUserLoggedIn$ = new BehaviorSubject<boolean>(false);
-  userId: Pick<User, "email">;
+  userId: Pick<User, "id">;
 
   httpOptions: { headers: HttpHeaders } = {
     headers: new HttpHeaders({"Content-Type": "application/json"}),
@@ -26,7 +26,7 @@ export class AutenticarService {
 
   constructor(private http: HttpClient, private errorHandleService: ErrorHandleService, private router: Router) { }
 
-  cadastrar(user: Omit<User, "email">): Observable<User>{
+  cadastrar(user: Omit<User, "id">): Observable<User>{
     return this.http.post<User>(this.urlCadastro, user, this.httpOptions).pipe(
       first(),
       catchError(this.errorHandleService.handleError<User>("cadastrar"))
@@ -38,13 +38,13 @@ export class AutenticarService {
     password: Pick<User, "password">
   ): Observable<{
     token: string;
-    userId: Pick<User, "email">;
+    userId: Pick<User, "id">;
   }> {
     return this.http
       .post(this.urlLogin, { email, password }, this.httpOptions)
       .pipe(
         first(),
-        tap((tokenObject: { token: string; userId: Pick<User, "email"> }) => {
+        tap((tokenObject: { token: string; userId: Pick<User, "id"> }) => {
           this.userId = tokenObject.userId;
           localStorage.setItem("token", tokenObject.token);
           this.isUserLoggedIn$.next(true);
@@ -53,7 +53,7 @@ export class AutenticarService {
         catchError(
           this.errorHandleService.handleError<{
             token: string;
-            userId: Pick<User, "email">;
+            userId: Pick<User, "id">;
           }>("login")
         )
       );
