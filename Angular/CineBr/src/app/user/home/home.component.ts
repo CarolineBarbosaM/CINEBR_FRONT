@@ -1,4 +1,4 @@
-import { Component, NgModule, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Observable } from "rxjs";
 
 import { MidiasService } from 'src/app/services/midias/midias.service';
@@ -12,7 +12,6 @@ import { User } from 'src/app/models/User';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-
 export class HomeComponent implements OnInit {
   midias$: void;
   userId: Pick<User, "id">;
@@ -25,7 +24,6 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.midias$ = this.get();
     this.userId = this.authService.userId;
-    
   }
 
   get(){
