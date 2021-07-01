@@ -26,6 +26,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.midias$ = this.fetchAll();
     this.series$ = this.fetchSeries();
+    this.documentarios$ = this.fetchDocumentario();
     this.userId = this.authService.userId;
   }
 

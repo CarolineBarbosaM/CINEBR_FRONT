@@ -8,6 +8,7 @@ import { BehaviorSubject, Observable } from 'rxjs';
 import { first, catchError, tap } from 'rxjs/operators';
 
 import { ErrorHandleService } from '../errorHandler/error-handle.service';
+import { UserService } from '../user/user.service';
 
 @Injectable({
   providedIn: 'root'
@@ -47,6 +48,7 @@ export class AutenticarService {
         tap((tokenObject: { token: string; userId: Pick<User, "id"> }) => {
           this.userId = tokenObject.userId;
           localStorage.setItem("token", tokenObject.token);
+          localStorage.setItem("id", JSON.stringify(tokenObject.userId));
           this.isUserLoggedIn$.next(true);
           this.router.navigate(["home"]);
         }),

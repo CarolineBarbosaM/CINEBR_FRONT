@@ -2,13 +2,11 @@
 
 <section class="catalogo">
     <div class="info-user">
-        <div class="info-user-left">
+        <div class="info-user-left" *ngFor="let user of user$ | async">
             <h1>Informações do Usuário</h1>
-            <p>Usuário: <u>Luiz Eduardo Catarino Ferreira</u></p>
-            <p>E-mail: <u>luizeduardo-catarino@outlook.com</u></p>
-            <p>Telefone:<u> (31) 97185-7123</u></p>
-            <p>Gênero:<u> Masculino</u></p>
-            <p>CPF: <u>000.000.000-00</u></p>
+            <p>Usuário: <u>{{user.name_user}}</u></p>
+            <p>E-mail: <u>{{user.email}}</u></p>
+            <p>Gênero:<u>{{user.sexo}}</u></p>
         </div>
         <div class="info-user-middle">
             <img src="/assets/artistas.png" alt="">
@@ -22,23 +20,6 @@
     </div>
     <div class="clear"></div>
     <br>
-    <!-- <div class="sec-title">
-        <h3>Recomendações</h3>
-        <div class="container-titulos">
-            <div class="row">
-                <div class="titulos-catalogo">
-                    <div class="titulo"><img src="/assets/demoposter.jpg" alt=""></div>
-                    <div class="titulo"><img src="/assets/demoposter.jpg" alt=""></div>
-                    <div class="titulo"><img src="/assets/demoposter.jpg" alt=""></div>
-                    <div class="titulo"><img src="/assets/demoposter.jpg" alt=""></div>
-                    <div class="titulo"><img src="/assets/demoposter.jpg" alt=""></div>
-                    <div class="titulo"><img src="/assets/demoposter.jpg" alt=""></div>
-                    <div class="titulo"><img src="/assets/demoposter.jpg" alt=""></div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    
 </section>
 
 <app-footer></app-footer>

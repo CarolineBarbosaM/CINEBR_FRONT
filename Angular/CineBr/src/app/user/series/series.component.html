@@ -3,13 +3,7 @@
 <section class="catalogo">
     <h3>Séries</h3>
 
-    <div class="titulo nw-titulo" onclick="openModal()"><img src="/assets/midia/comoseoceufosseoceano/poster.png" alt=""></div>
-    <div class="titulo nw-titulo"><img src="/assets/demoposter.jpg" alt=""></div>
-    <div class="titulo nw-titulo"><img src="/assets/demoposter.jpg" alt=""></div>
-    <div class="titulo nw-titulo"><img src="/assets/demoposter.jpg" alt=""></div>
-    <div class="titulo nw-titulo"><img src="/assets/demoposter.jpg" alt=""></div>
-    <div class="titulo nw-titulo"><img src="/assets/demoposter.jpg" alt=""></div>
-    <div class="titulo nw-titulo"><img src="/assets/demoposter.jpg" alt=""></div>
+    <div class="titulo nw-titulo" *ngFor="let serie of series$ | async"><img src="/assets/demoposter.jpg" alt=""></div>
 
     <div class="clear"></div>
 </section>
