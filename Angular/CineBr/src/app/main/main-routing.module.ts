@@ -6,15 +6,15 @@ const AUTH_ROUTE: Route = {
   loadChildren: () => import('./authentication/auth.module').then(m => m.AuthModule)
 };
 
-// const MAIN_ROUTE: Route = {
-//   path: '',
-//   loadChildren: () => import('./main/main.module').then(m => m.MainModule)
-// }
+const MAIN_ROUTE: Route = {
+  path: '',
+  loadChildren: () => import('./main/main.module').then(m => m.MainModule)
+}
 
 const routes: Routes = [
   {path: '', redirectTo: '/auth/login', pathMatch: 'full' },
   AUTH_ROUTE,
-  // MAIN_ROUTE
+  MAIN_ROUTE
 ];
 
 @NgModule({
